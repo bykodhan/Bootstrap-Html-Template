@@ -1,0 +1,88 @@
+body {
+  padding-top: 54px;
+}
+
+.whatsapp-color:hover
+{
+color: #25d366;
+}
+
+.linkedin-color:hover
+{
+color: #0077b5;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.facebook {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 5px;
+
+     text-decoration: none !important
+
+}
+.facebook:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+		color: #3b5998;
+    }
+
+    .twitter {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+
+       margin-right: 5px;
+
+     text-decoration: none !important
+
+}
+.twitter:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+		color: #1da1f2;
+
+    }
+   .instagram {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+       margin-right: 5px;
+
+
+     text-decoration: none !important
+
+}
+.instagram:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+		color: #833ab4;
+
+    }
+
+.nounderline {
+  text-decoration: none !important
+}
+.like_button:hover{
+    color: #be0027;
+
+}
+.like_button{
+             text-decoration: none !important;
+      color: black;
+
+}
+.widget-post{
+  width: 100%;
+}
+.widget-post h5:hover{
+color: red;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
