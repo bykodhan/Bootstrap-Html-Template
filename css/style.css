@@ -81,6 +81,19 @@ color: #0077b5;
 .widget-post h5:hover{
 color: red;
 }
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 998;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#topBtn:hover {
+  color: maroon;
+}
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
