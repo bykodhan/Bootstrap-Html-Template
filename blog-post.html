@@ -87,6 +87,8 @@
 				</div>
 			</div>
 		</nav>
+    <!-- Top Page Button -->
+    <a id="topBtn" class="fas fa-angle-up fa-3x hvr-grow"></a>
 
     <!-- Page Content -->
     <div class="container">
@@ -436,6 +438,20 @@
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
   });
+  // Top Page Button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("topBtn").style.display = "block";
+      } else {
+        document.getElementById("topBtn").style.display = "none";
+      }
+    };
+    $("#topBtn").click(function() {
+       $("html, body").animate({ scrollTop: 0 }, "slow");
+       return false;
+      });
+      // Top Page Button End
 </script>
 <script>
 function open_reply_div(comment_id)

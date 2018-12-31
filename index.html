@@ -80,7 +80,8 @@
 				</div>
 			</div>
 		</nav>
-
+		<!-- Top Page Button -->
+		<a id="topBtn" class="fas fa-angle-up fa-3x hvr-grow"></a>
 		<!-- Page Content -->
 		<div class="container animated pulse">
 
@@ -90,25 +91,26 @@
 				<!-- Blog Entries Column -->
 				<div class="col-lg-8">
 					<hr>
-					<ul class="nav nav-pills nav-fill flex-column flex-sm-row mb-3" id="pills-tab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active hvr-sweep-to-right"  href="#"><i class="far fa-calendar-alt"></i> Son Eklenenler</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link  hvr-sweep-to-right" href="#"><i class="far fa-eye"></i> Çok Okunanlar</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link  hvr-sweep-to-right" href="#"><i class="far fa-comments"></i> Çok Yorumlananlar</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link  hvr-sweep-to-right" href="/cok-begenilenler"><i class="fas fa-heart"></i> Çok Beğenilenler</a>
-						</li>
-
+				     <ul class="nav nav-pills nav-fill flex-column flex-sm-row mb-3" id="pills-tab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active hvr-sweep-to-right" id="pills-latest-tab" data-toggle="pill" href="#pills-latest" role="tab" aria-controls="pills-latest" aria-selected="true"><i class="far fa-calendar-alt"></i> Son Eklenenler</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link hvr-sweep-to-right" id="pills-view-tab" data-toggle="pill" href="#pills-view" role="tab" aria-controls="pills-view" aria-selected="false"><i class="far fa-eye"></i> Çok Okunanlar</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link hvr-sweep-to-right" id="pills-comment-tab" data-toggle="pill" href="#pills-comment" role="tab" aria-controls="pills-comment" aria-selected="false"><i class="far fa-comments"></i> Çok Yorumlananlar</a>
+					  </li>
+					   <li class="nav-item">
+					    <a class="nav-link hvr-sweep-to-right" id="pills-like-tab" data-toggle="pill" href="#pills-like" role="tab" aria-controls="pills-like" aria-selected="false"><i class="fas fa-heart"></i> Çok Beğenilenler</a>
+					  </li>
 					</ul>
-					<hr>
+
 					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active">
-							<!-- Blog Post -->
+
+					  <div class="tab-pane fade show active" id="pills-latest" role="tabpanel" aria-labelledby="pills-latest-tab">
+					  	<h1>Son Eklenenler</h1>
+					  	<!-- Blog Post -->
 							<div class="card mb-4 hvr-glow">
 								<a href="#" data-toggle="tooltip" title="Bulunduğu Kategori"
 								style="position: absolute;" class="badge badge-success">Sunucu-Hosting</a>
@@ -142,11 +144,125 @@
 
 								</div>
 								<!-- Blog Post -->
-	<hr>
+					  </div>
+					 
+					 	<div class="tab-pane fade" id="pills-view" role="tabpanel" aria-labelledby="pills-view-tab">
+					  	<h1>Çok Okunanlar</h1>
+					  	<!-- Blog Post -->
+							<div class="card mb-4 hvr-glow">
+								<a href="#" data-toggle="tooltip" title="Bulunduğu Kategori"
+								style="position: absolute;" class="badge badge-success">Sunucu-Hosting</a>
+								<a href="#"><img class="card-img-top rounded" src="https://pisiblog.com/laravel-filemanager/photos/1/https-3344700_640.jpg" alt="Card image cap"></a>
+								<div class="card-body">
+									<h2 class="card-title">Ücretsiz SSL Almak ve Kurmak</h2>
+									<p class="card-text">Bu yazıda 3 aylık ücretsiz SSL alıp, aldığımız SSL sertifikasını nasıl kuracağımızı anlatacağım. SSL sertifikanızın süresi bittiğinde tekrar aynı işlemleri uygulayarak 3 aylık süreci uzatabilirsiniz.</p>
+									<a href="#" class="btn btn-primary hvr-pulse-grow">Devamını Oku &rarr;</a>
+	  							</div>
+								  <div style="cursor: default;" class="card-footer text-muted">
+								  	<span class="pl-1" data-toggle="tooltip" title="Yazar">
+								  		<i class="fas fa-user-edit"></i> @pisiblog
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yayınlanma Tarihi">
+								  		<i class="fas fa-clock"></i> 7 saat önce
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Görüntülenme Sayısı">
+								  		<i class="fas fa-eye"></i> 8
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Beğenilme Sayısı">
+								  		<i class="fas fa-heart"></i> 0
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yorum Sayısı">
+								  		<i class="fas fa-comments"></i> 0
+								  	</span>
 
-	</div>
+								  	<span class="pl-1" title="Tahmini okuma süresi" data-toggle="tooltip">
+								  		<i class="fas fa-book-reader"></i> 2 dakika
+								  	</span>
+								  </div>
 
-	</div>
+								</div>
+								<!-- Blog Post -->
+					  </div>
+
+					  <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+					  	<h1>Çok Yorumlananlar</h1>
+					  	<!-- Blog Post -->
+							<div class="card mb-4 hvr-glow">
+								<a href="#" data-toggle="tooltip" title="Bulunduğu Kategori"
+								style="position: absolute;" class="badge badge-success">Sunucu-Hosting</a>
+								<a href="#"><img class="card-img-top rounded" src="https://pisiblog.com/laravel-filemanager/photos/1/https-3344700_640.jpg" alt="Card image cap"></a>
+								<div class="card-body">
+									<h2 class="card-title">Ücretsiz SSL Almak ve Kurmak</h2>
+									<p class="card-text">Bu yazıda 3 aylık ücretsiz SSL alıp, aldığımız SSL sertifikasını nasıl kuracağımızı anlatacağım. SSL sertifikanızın süresi bittiğinde tekrar aynı işlemleri uygulayarak 3 aylık süreci uzatabilirsiniz.</p>
+									<a href="#" class="btn btn-primary hvr-pulse-grow">Devamını Oku &rarr;</a>
+	  							</div>
+								  <div style="cursor: default;" class="card-footer text-muted">
+								  	<span class="pl-1" data-toggle="tooltip" title="Yazar">
+								  		<i class="fas fa-user-edit"></i> @pisiblog
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yayınlanma Tarihi">
+								  		<i class="fas fa-clock"></i> 7 saat önce
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Görüntülenme Sayısı">
+								  		<i class="fas fa-eye"></i> 8
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Beğenilme Sayısı">
+								  		<i class="fas fa-heart"></i> 0
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yorum Sayısı">
+								  		<i class="fas fa-comments"></i> 0
+								  	</span>
+
+								  	<span class="pl-1" title="Tahmini okuma süresi" data-toggle="tooltip">
+								  		<i class="fas fa-book-reader"></i> 2 dakika
+								  	</span>
+								  </div>
+
+								</div>
+								<!-- Blog Post -->
+					  </div>
+
+					  <div class="tab-pane fade" id="pills-like" role="tabpanel" aria-labelledby="pills-like-tab">
+					  	<h1>Çok Beğenilenler</h1>
+					  	<!-- Blog Post -->
+							<div class="card mb-4 hvr-glow">
+								<a href="#" data-toggle="tooltip" title="Bulunduğu Kategori"
+								style="position: absolute;" class="badge badge-success">Sunucu-Hosting</a>
+								<a href="#"><img class="card-img-top rounded" src="https://pisiblog.com/laravel-filemanager/photos/1/https-3344700_640.jpg" alt="Card image cap"></a>
+								<div class="card-body">
+									<h2 class="card-title">Ücretsiz SSL Almak ve Kurmak</h2>
+									<p class="card-text">Bu yazıda 3 aylık ücretsiz SSL alıp, aldığımız SSL sertifikasını nasıl kuracağımızı anlatacağım. SSL sertifikanızın süresi bittiğinde tekrar aynı işlemleri uygulayarak 3 aylık süreci uzatabilirsiniz.</p>
+									<a href="#" class="btn btn-primary hvr-pulse-grow">Devamını Oku &rarr;</a>
+	  							</div>
+								  <div style="cursor: default;" class="card-footer text-muted">
+								  	<span class="pl-1" data-toggle="tooltip" title="Yazar">
+								  		<i class="fas fa-user-edit"></i> @pisiblog
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yayınlanma Tarihi">
+								  		<i class="fas fa-clock"></i> 7 saat önce
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Görüntülenme Sayısı">
+								  		<i class="fas fa-eye"></i> 8
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Beğenilme Sayısı">
+								  		<i class="fas fa-heart"></i> 0
+								  	</span>
+								  	<span class="pl-1" data-toggle="tooltip" title="Yorum Sayısı">
+								  		<i class="fas fa-comments"></i> 0
+								  	</span>
+
+								  	<span class="pl-1" title="Tahmini okuma süresi" data-toggle="tooltip">
+								  		<i class="fas fa-book-reader"></i> 2 dakika
+								  	</span>
+								  </div>
+
+								</div>
+								<!-- Blog Post -->
+					  </div>
+					</div>
+
+					<hr>
+					
 
 	</div>
 	<!-- Sidebar Widgets Column -->
@@ -318,5 +434,20 @@
 		$(document).ready(function(){
 			$('[data-toggle="tooltip"]').tooltip();
 		});
+		// Top Page Button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		    document.getElementById("topBtn").style.display = "block";
+		  } else {
+		    document.getElementById("topBtn").style.display = "none";
+		  }
+		};
+		$("#topBtn").click(function() {
+	     $("html, body").animate({ scrollTop: 0 }, "slow");
+	     return false;
+	    });
+	    // Top Page Button End
 	</script>
+
 	</html>
